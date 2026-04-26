@@ -496,6 +496,7 @@ html {
 }
 
 .footer-subscribe {
+    margin-left: auto;
 }
 
 .footer-subscribe-title {
@@ -514,17 +515,17 @@ html {
 
 .footer-subscribe-input {
     width: 264px;
-    height: 40px;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    padding-left: 16px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: #ffffff;
-    outline: transparent;
+        height: 40px;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        padding-left: 16px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        color: #ffffff;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-input::placeholder {
@@ -552,12 +553,17 @@ html {
 
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
-    background-color: #404bbf;
+    background-color: #31d0aa;
 }
 
 .footer-subscribe-icon {
     margin-left: 16px;
     fill: #ffffff;
+}
+
+.footer-subscribe-input:focus {
+    border-color: #31d0aa;
+    outline: none;
 }
 
 /* --- BACKDROP (B1, B2, B6) --- */
@@ -625,6 +631,7 @@ html {
 }
 
 .modal-close-icon {
+    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -722,18 +729,18 @@ html {
 }
 
 .modal-custom-checkbox {
-    width: 16px;
+width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked+.modal-checkbox-label .modal-custom-checkbox {
@@ -750,18 +757,25 @@ html {
 /* --- SUBMIT BUTTON --- */
 .modal-submit-btn {
     display: block;
-    min-width: 169px;
-    height: 56px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    background-color: #4d5ae5;
-    border: none;
-    border-radius: 4px;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        min-width: 169px;
+        height: 56px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        background-color: #4d5ae5;
+        border: none;
+        border-radius: 4px;
+        margin: 0 auto;
+        cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+    background-color: #404bbf;
+    /* Ховер стан */
 }
 
 /* Утилітарний клас для приховування */
